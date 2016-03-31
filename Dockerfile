@@ -2,7 +2,7 @@ FROM tutum/apache-php:latest
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get install -y php5-sqlite git
+    apt-get install -y php5-sqlite php5-ldap git
 
 WORKDIR /
 
